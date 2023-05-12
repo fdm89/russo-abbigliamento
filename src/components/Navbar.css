@@ -11,27 +11,24 @@
   right: 0;
   z-index: 100;
   transition: background-color 0.3s ease;
-  
 }
 
-.logo-russo{
+.logo-russo {
   width: 120px;
   height: 50px;
-  
-  
 }
-
 
 .navbar-menu {
   display: flex;
   gap: 1rem;
-  
 }
 
 .navbar-item {
   color: #fff;
   text-decoration: none;
 }
+
+
 
 .navbar-toggle,
 .navbar-close {
@@ -51,10 +48,6 @@
   cursor: pointer;
 }
 
-/* Other styles remain unchanged */
-
-/* Other styles remain unchanged */
-
 .navbar-toggle-icon {
   display: block;
   width: 22px;
@@ -65,7 +58,6 @@
 
 .scrolled .navbar-toggle-icon {
   background-color: #000;
-  
 }
 
 .navbar-toggle span {
@@ -73,29 +65,18 @@
   height: 2px;
   background-color: black;
   transition: all 0.3s ease-in-out;
-  
 }
 
 .navbar--scroll {
   background-color: #f2f0e8;
-  
- 
-  
-  
-  
 }
 
 .navbar--scroll .navbar-item {
   color: black;
-  
-  
-  
-  
 }
 
 .navbar-toggle .navbar-span--scroll {
   background-color: black;
-  
 }
 
 .navbar-toggle.open span:nth-child(1) {
@@ -110,12 +91,6 @@
   transform: rotate(45deg) translate(-3px, -5px);
 }
 
-/* Other styles remain unchanged */
-
-
-/* Other styles remain unchanged */
-
-
 .navbar-close {
   position: absolute;
   top: 1rem;
@@ -124,13 +99,10 @@
 
 .navbar.scrolled {
   background-color: white;
-  
-  
 }
 
 .navbar-item {
   color: black;
-  
 }
 
 .navbar.scrolled .navbar-item {
@@ -138,8 +110,6 @@
 }
 
 @media (max-width: 1024px) {
-
- 
   .navbar-menu {
     display: flex;
     flex-direction: column;
@@ -163,61 +133,17 @@
     margin-bottom: 1rem;
   }
 
-  .navbar-toggle,
-  .navbar-close {
-    display: block;
-    
-  }
-}
-
-/* Other styles remain unchanged */
-
-/* Hide the navbar-toggle for screens larger than 1024px */
-.navbar-toggle {
-  display: none;
-}
-
-/* Show the navbar-toggle and hide the regular menu items for screens smaller than or equal to 1024px */
-@media (max-width: 1024px) {
-
-
-  
-  .navbar-menu {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 250px;
-    height: 100%;
-    gap: 0;
-    background-color: #333;
-    padding: 1rem;
-    transition: right 0.3s ease-in-out;
-  }
-
-  .navbar-menu.open {
-    right: 0;
-  }
-
-  .navbar-item {
-    margin-bottom: 1rem;
-    
-  }
-
-  /* Show the navbar-toggle */
   .navbar-toggle {
     display: flex;
-    
-    
-    
-    
   }
 
-  /* Show the navbar-close */
   .navbar-close {
     display: block;
   }
-  
+}
 
+@media (min-width: 1025px) {
+  .navbar-toggle {
+    display: none;
+  }
 }
