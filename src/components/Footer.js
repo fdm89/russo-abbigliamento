@@ -1,6 +1,7 @@
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     
@@ -13,6 +14,9 @@ function Footer() {
     <p>
        R.G.S. Group SRL P.IVA: 04884990658
     </p>
+    <Link to="/NoteLegali" className='note-legali'>
+  <p>Note Legali</p>
+</Link>
   
         
     </div>

@@ -7,6 +7,7 @@ import Collection from "./components/Collection";
 import Contact from "./components/Contact";
 import { PulseLoader } from "react-spinners";
 import './App.css';
+import NoteLegali from "./components/NoteLegali";
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/collection" element={<Collection />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/notelegali" element={<NoteLegali />} />
             <Route path="/*" element={<Navigate to="/home" replace={true} />} />
           </Routes>
         </Router>

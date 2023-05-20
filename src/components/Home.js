@@ -1,4 +1,6 @@
 import React, { useRef, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import backgroundImage from '../assets/immagine-hero.jpg';
 import './Home.css';
 import Heroone from "./Heroone";
@@ -6,6 +8,8 @@ import Herotwo from "./Herotwo";
 import Carousel from "./Carousel";
 import Footer from "./Footer";
 import Button from "./Button";
+
+
 
 const homeContainerStyle = {
   backgroundImage: `url(${backgroundImage})`,
@@ -25,8 +29,12 @@ function Home() {
 
   return (
     <div className="home-container" ref={homeRef}>
-      <div style={homeContainerStyle} alt="Background image description"></div>
-      <div className="banner" >
+      <div style={homeContainerStyle} alt="Background image description">
+      <a href="#banner">
+        <FontAwesomeIcon icon={faAngleDoubleDown} className="double-arrow-icon" />
+        </a>
+      </div>
+  <div className="banner" id="banner">
         <p>Outerweare</p>
         <h1>KEEP ON MOVING</h1>
         <p>Vieni a scoprire la nostra nuova collezione primavera estate 2023</p>
@@ -34,8 +42,11 @@ function Home() {
       </div>
       <Heroone />
       <Herotwo />
+      
       <h1 className="carousel-header">Ultimi arrivi collezione primavera estate 2023</h1>
       <Carousel />
+      
+    
       <Footer></Footer>
     </div>
   );

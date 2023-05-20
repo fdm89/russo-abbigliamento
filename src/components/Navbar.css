@@ -119,7 +119,7 @@
     width: 250px;
     height: 100%;
     gap: 0;
-    background-color: #333;
+    background-color: #f2f0e8;
     padding: 1rem;
     transition: right 0.3s ease-in-out;
   }

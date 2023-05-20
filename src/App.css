@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .loader {
   position: absolute;
   top: 50%;

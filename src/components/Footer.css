@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     background-color: #f2f0e8;
-    min-height: 30vh;
+    height: 18vh;;
   }
   
   .social-icons {
@@ -20,5 +20,11 @@
   
   .social-icons a:last-child {
     margin-right: 0;
+  }
+
+  .note-legali{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
   }
   

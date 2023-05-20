@@ -1,6 +1,6 @@
 .carousel-container{
     width: 100%;
-    max-width: 900px;
+    max-width: 90%;
     margin: 0 auto;
     min-height: 80vh;
     display: flex;
@@ -31,4 +31,17 @@
     cursor: auto;
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+    .carousel-container {
+      min-height: 60vh;
+      
+    }
+  
+    .item {
+      min-height: 150px;
+      min-width: 250px;
+      padding: 10px;
+    }
+  }
 
