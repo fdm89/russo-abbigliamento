@@ -127,6 +127,7 @@
   .navbar-menu.open {
     right: 0;
     padding-top: 40px;
+    width: 200px;
   }
 
   .navbar-item {
