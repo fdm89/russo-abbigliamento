@@ -17,7 +17,7 @@ const homeContainerStyle = {
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
   width: '100%',
-  height: '80vh',
+  height: '100vh',
 };
 
 function Home() {
@@ -30,9 +30,11 @@ function Home() {
   return (
     <div className="home-container" ref={homeRef}>
       <div style={homeContainerStyle} alt="Background image description">
+      
       <a href="#banner">
         <FontAwesomeIcon icon={faAngleDoubleDown} className="double-arrow-icon" />
         </a>
+      
       </div>
   <div className="banner" id="banner">
         <p>Outerweare</p>
