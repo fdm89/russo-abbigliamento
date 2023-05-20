@@ -17,7 +17,7 @@ const homeContainerStyle = {
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
   width: '100%',
-  height: '95vh',
+  height: '80vh',
 };
 
 function Home() {
