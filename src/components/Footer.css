@@ -3,9 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f2f0e8;
+    background-color: #b38b59;
     height: 18vh;;
   }
+
+  
+  /* f2f0e8 */
   
   .social-icons {
     display: flex;

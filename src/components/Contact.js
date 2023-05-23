@@ -10,8 +10,12 @@ import emailjs from '@emailjs/browser';
 // RUQMrel50iD53TH2T
 
 function Contact() {
+
+
+
+  
     useEffect(() => {
-        window.scrollTo({ top: 0, behavior: "instant" });
+       window.scrollTo({ top: 0, left: 0, behavior: "instant" });
       }, [])
 
       const formRef = useRef();
