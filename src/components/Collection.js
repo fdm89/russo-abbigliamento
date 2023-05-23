@@ -5,7 +5,7 @@ import Carousel from './Carousel';
 
 function Collection() {
     useEffect(() => {
-        window.scrollTo(0, 0);
+        window.scrollTo({ top: 0, behavior: "instant" });
       }, [])
     
     return <div className="container">

@@ -14,9 +14,7 @@ function Footer() {
     <p>
        R.G.S. Group SRL P.IVA: 04884990658
     </p>
-    <Link to="/NoteLegali" className='note-legali'>
-  <p>Note Legali</p>
-</Link>
+    <Link to="/NoteLegali" className='note-legali'>Note Legali</Link>
   
         
     </div>

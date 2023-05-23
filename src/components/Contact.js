@@ -11,7 +11,7 @@ import emailjs from '@emailjs/browser';
 
 function Contact() {
     useEffect(() => {
-        window.scrollTo(0, 0);
+        window.scrollTo({ top: 0, behavior: "instant" });
       }, [])
 
       const formRef = useRef();
@@ -65,7 +65,7 @@ function Contact() {
   
     
     return <div className="container">
-        <h1>Contact</h1>
+        <h1>Contattaci</h1>
        <motion.div 
         initial={{x: 100}}
         animate={{x: 0}}
@@ -75,37 +75,37 @@ function Contact() {
   <div className="formbold-form-wrapper">
     <form ref={formRef} onSubmit={handleSubmit}>
       <div className="formbold-mb-5">
-        <label for="name" className="formbold-form-label"> Full Name </label>
+        <label for="name" className="formbold-form-label"> Nome </label>
         <input
           type="text"
           name="name"
           value={form.name}
           onChange={handleChange}
-          placeholder="Full Name"
+          placeholder="Nome"
           className="formbold-form-input"
         />
       </div>
 
       <div className="formbold-mb-5">
-        <label for="email" className="formbold-form-label"> Email Address </label>
+        <label for="email" className="formbold-form-label"> Indirizzo Email </label>
         <input
           type="email"
           name="email"
           value={form.email}
           onChange={handleChange}
-          placeholder="Enter your email"
+          placeholder="inserisci la tua email"
           className="formbold-form-input"
         />
       </div>
 
       <div className="formbold-mb-5">
-        <label for="message" className="formbold-form-label"> Message </label>
+        <label for="message" className="formbold-form-label"> Messaggio </label>
         <textarea
           rows="7"
           name="message"
           value={form.message}
           onChange={handleChange}
-          placeholder="Type your message"
+          placeholder="Scrivi il tuo messaggio"
           className="formbold-form-input"
         ></textarea>
       </div>
@@ -113,7 +113,7 @@ function Contact() {
       <div>
         <button
          type='submit' 
-         className="formbold-btn">{loading ? "Sending..." : "Send"}</button>
+         className="formbold-btn">{loading ? "Inviando..." : "Invia"}</button>
       </div>
     </form>
   </div>
