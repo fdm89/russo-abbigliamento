@@ -79,7 +79,7 @@ function Contact() {
   <div className="formbold-form-wrapper">
     <form ref={formRef} onSubmit={handleSubmit}>
       <div className="formbold-mb-5">
-        <label for="name" className="formbold-form-label"> Nome </label>
+        <label htmlFor="name" className="formbold-form-label"> Nome </label>
         <input
           type="text"
           name="name"
@@ -91,7 +91,7 @@ function Contact() {
       </div>
 
       <div className="formbold-mb-5">
-        <label for="email" className="formbold-form-label"> Indirizzo Email </label>
+        <label htmlFor="email" className="formbold-form-label"> Indirizzo Email </label>
         <input
           type="email"
           name="email"
@@ -103,7 +103,7 @@ function Contact() {
       </div>
 
       <div className="formbold-mb-5">
-        <label for="message" className="formbold-form-label"> Messaggio </label>
+        <label htmlFor="message" className="formbold-form-label"> Messaggio </label>
         <textarea
           rows="7"
           name="message"
