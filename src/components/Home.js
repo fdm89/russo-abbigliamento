@@ -4,7 +4,7 @@ import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import backgroundImage from '../assets/immagine-hero.jpg';
 import './Home.css';
 import Heroone from "./Heroone";
-import Herotwo from "./Herotwo";
+/* import Herotwo from "./Herotwo"; */
 import Carousel from "./Carousel";
 import Footer from "./Footer";
 import Button from "./Button";
