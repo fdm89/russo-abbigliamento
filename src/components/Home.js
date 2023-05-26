@@ -42,11 +42,13 @@ function Home() {
         <p>Vieni a scoprire la nostra nuova collezione primavera estate 2023</p>
         <Button/>
       </div>
-      <Heroone />
-      <Herotwo />
-      
       <h1 className="carousel-header">Ultimi arrivi collezione primavera estate 2023</h1>
       <Carousel />
+      <Heroone />
+      {/* <Herotwo /> */}
+      
+      {/* <h1 className="carousel-header">Ultimi arrivi collezione primavera estate 2023</h1>
+      <Carousel /> */}
       
     
       <Footer></Footer>
