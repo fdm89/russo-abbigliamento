@@ -3,6 +3,7 @@ import './Contact.css';
 import Footer from './Footer';
 import {motion} from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import { Helmet } from 'react-helmet';
 
 
 // template_dc4sstj
@@ -69,6 +70,11 @@ function Contact() {
   
     
     return <div className="container">
+      <Helmet>
+          <title>Contattaci | Russo Abbigliamento</title>
+          <meta name="description" content="Pagina di contatto di Russo Abbigliamento." />
+          <meta name="keywords" content="abbigliamento uomo, maglieria, camiceria, pantaloni, capispalla, Made in Italy, sartoriale, abiti" />
+        </Helmet>
         <h1>Contattaci</h1>
        <motion.div 
         initial={{x: 100}}

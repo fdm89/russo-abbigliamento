@@ -1,4 +1,5 @@
 import React, { useEffect, } from 'react';
+import { Helmet } from 'react-helmet';
 import './About.css';
 import image1 from '../assets/logo.png';
 import Footer from './Footer';
@@ -13,6 +14,11 @@ function About() {
       }, [])
   return (
     <div className="about-container">
+      <Helmet>
+                <title>Chi Siamo - Russo abbigliamento</title>
+                <meta name="description" content="Russo abbigliamento, un'eccellenza nell'abbigliamento maschile dal cuore italiano. Dagli anni '80, siamo orgogliosi di offrire prodotti di alta qualità, caratterizzati da un'attenzione meticolosa per i dettagli e dalla ricerca dei tessuti." />
+                <meta name="keywords" content="abbigliamento uomo, maglieria, camiceria, pantaloni, capispalla, Made in Italy, sartoriale, abiti" />
+            </Helmet>
       <header>
         <h1>About Us</h1>
         <p><strong>Russo abbigliamento</strong>, un'eccellenza nell'abbigliamento maschile dal cuore italiano. Dagli anni '80, siamo orgogliosi di offrire prodotti di alta qualità, caratterizzati da un'attenzione meticolosa per i dettagli e dalla ricerca dei tessuti.</p>

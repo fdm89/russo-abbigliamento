@@ -16,6 +16,7 @@ import DoveSiamo from "./components/DoveSiamo";
 function App() {
   const [loading, setLoading] = useState(false);
     useEffect(() =>{
+      if (!window.snapSaveState)
          setLoading(true)
          setTimeout(()=>{
            setLoading(false)

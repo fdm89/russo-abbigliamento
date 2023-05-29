@@ -26,11 +26,11 @@ function Navbar() {
       <div className={`navbar-menu ${isMenuOpen ? 'open' : ''}`}>
         <button className={`navbar-close ${scroll ? 'navbar-close--scroll' : ''}`} onClick={toggleMenu}>
         </button>
-        <Link to="/" className="navbar-item underline-link" onClick={toggleMenu}>Home</Link>
-        <Link to="/about" className="navbar-item underline-link" onClick={toggleMenu}>About</Link>
-        <Link to="/collection" className="navbar-item underline-link" onClick={toggleMenu}>Collection</Link>
-        <Link to="/dovesiamo" className="navbar-item underline-link" onClick={toggleMenu}>Dove Siamo</Link>
-        <Link to="/contact" className="navbar-item underline-link" onClick={toggleMenu}>Contact</Link>
+        <Link rel='canonical' to="/" className="navbar-item underline-link" onClick={toggleMenu}>Home</Link>
+        <Link rel="canonical" to="/about" className="navbar-item underline-link" onClick={toggleMenu}>About</Link>
+        <Link rel="canonical" to="/collection" className="navbar-item underline-link" onClick={toggleMenu}>Collection</Link>
+        <Link rel="canonical" to="/dovesiamo" className="navbar-item underline-link" onClick={toggleMenu}>Dove Siamo</Link>
+        <Link rel="canonical" to="/contact" className="navbar-item underline-link" onClick={toggleMenu}>Contact</Link>
       </div>
       <button className={`navbar-toggle ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <span className={`navbar-span ${scroll ? 'navbar-span--scroll' : ''}`}></span>

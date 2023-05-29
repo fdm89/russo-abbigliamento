@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { Helmet } from 'react-helmet';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import backgroundImage from '../assets/immagine-hero.jpg';
@@ -29,6 +30,11 @@ function Home() {
 
   return (
     <div className="home-container" ref={homeRef}>
+      <Helmet>
+        <title>Home - Russo Abbigliamento</title>
+        <meta name="description" content="Vieni a scoprire la nostra nuova collezione primavera estate 2023" />
+        <meta name="keywords" content="abbigliamento, collezione, primavera, estate, 2023, abbigliamento uomo, maglieria, camiceria, pantaloni, capispalla, Made in Italy, sartoriale, abiti" />
+      </Helmet>
       <div style={homeContainerStyle} alt="Background image description">
       
       <a href="#banner">
