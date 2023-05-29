@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import { PulseLoader } from "react-spinners";
 import './App.css';
 import NoteLegali from "./components/NoteLegali";
+import DoveSiamo from "./components/DoveSiamo";
 
 
 
@@ -41,6 +42,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/collection" element={<Collection />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/dovesiamo" element={<DoveSiamo />} />
             <Route path="/notelegali" element={<NoteLegali />} />
             <Route path="/*" element={<Navigate to="/home" replace={true} />} />
           </Routes>

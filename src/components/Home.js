@@ -4,7 +4,7 @@ import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import backgroundImage from '../assets/immagine-hero.jpg';
 import './Home.css';
 import Heroone from "./Heroone";
-/* import Herotwo from "./Herotwo"; */
+import Herotwo from "./Herotwo";
 import Carousel from "./Carousel";
 import Footer from "./Footer";
 import Button from "./Button";
@@ -42,13 +42,11 @@ function Home() {
         <p>Vieni a scoprire la nostra nuova collezione primavera estate 2023</p>
         <Button/>
       </div>
-      <h1 className="carousel-header">Ultimi arrivi collezione primavera estate 2023</h1>
-      <Carousel />
       <Heroone />
-      {/* <Herotwo /> */}
+      <Herotwo />
       
-      {/* <h1 className="carousel-header">Ultimi arrivi collezione primavera estate 2023</h1>
-      <Carousel /> */}
+      <h1 className="carousel-header">Collezione primavera estate 2023</h1>
+      <Carousel /> 
       
     
       <Footer></Footer>

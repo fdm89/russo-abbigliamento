@@ -14,6 +14,10 @@ function Carousel() {
   const carousel = useRef();
   const [width, setWidth] = useState(0);
 
+
+ 
+  
+
   useEffect(() => {
     setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
   }, []);
@@ -23,6 +27,7 @@ function Carousel() {
       carousel.current.scrollLeft += event.deltaX;
     }
   };
+
 
   return (
     <div className="carousel-container" onWheel={handleWheel}>
@@ -37,7 +42,10 @@ function Carousel() {
         >
           {images.map((image) => (
             <motion.div className="item" key={image}>
-              <img src={image} alt="nuova collezione" />
+              <img 
+               src={image}
+               alt="nuova collezione"
+              />
             </motion.div>
           ))}
         </motion.div>
@@ -47,3 +55,8 @@ function Carousel() {
 }
 
 export default Carousel;
+
+
+
+
+
