@@ -2,6 +2,7 @@ import React, { useEffect, } from 'react';
 import { Helmet } from 'react-helmet';
 import './About.css';
 import image1 from '../assets/logo.png';
+import { motion } from 'framer-motion';
 import Footer from './Footer';
 
 
@@ -19,6 +20,10 @@ function About() {
                 <meta name="description" content="Russo abbigliamento, un'eccellenza nell'abbigliamento maschile dal cuore italiano. Dagli anni '80, siamo orgogliosi di offrire prodotti di alta qualità, caratterizzati da un'attenzione meticolosa per i dettagli e dalla ricerca dei tessuti." />
                 <meta name="keywords" content="abbigliamento uomo, maglieria, camiceria, pantaloni, capispalla, Made in Italy, sartoriale, abiti" />
             </Helmet>
+            <motion.div 
+        initial={{x: 100}}
+        animate={{x: 0}}
+        transition={{duration: 0.8}}>
       <header>
         <h1>About Us</h1>
         <p><strong>Russo abbigliamento</strong>, un'eccellenza nell'abbigliamento maschile dal cuore italiano. Dagli anni '80, siamo orgogliosi di offrire prodotti di alta qualità, caratterizzati da un'attenzione meticolosa per i dettagli e dalla ricerca dei tessuti.</p>
@@ -29,6 +34,7 @@ function About() {
       <section className="photo-gallery">
         <img src={image1} alt="team member 1" />
       </section>
+      </motion.div>
 
       
       <Footer></Footer>

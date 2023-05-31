@@ -7,7 +7,7 @@ function Button() {
   
 
   return (
-    <Link to="/collection" className="button">VAI ALLA COLLEZIONE</Link>
+    <Link rel='canonical' to="/collection" className="button">VAI ALLA COLLEZIONE</Link>
   );
 }
 

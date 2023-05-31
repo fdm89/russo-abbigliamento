@@ -12,24 +12,23 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^10.12.4",
+    "posthog-js": "^1.61.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-parallax": "^3.5.1",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
-    "react-snap": "^1.23.0",
     "react-spinners": "^0.13.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "serve -s build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
-  "build": "react-scripts build",
-  "postbuild": "react-snap",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

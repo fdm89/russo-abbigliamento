@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import './DoveSiamo.css';
 import Footer from './Footer';
+import { motion } from 'framer-motion';
 
 
 
@@ -19,8 +20,12 @@ function DoveSiamo() {
                 <meta name="description" content="Scopri dove si trovano i nostri negozi. Abbiamo punti vendita in diverse città." />
                 <meta name="keywords" content="negozi, punti vendita, Russo Abbigliamento, indirizzi, abbigliamento uomo, maglieria, camiceria, pantaloni, capispalla, Made in Italy, sartoriale, abiti " />
             </Helmet>
-      
+            
       <h2>I nostri store</h2>
+      <motion.div 
+        initial={{x: 100}}
+        animate={{x: 0}}
+        transition={{duration: 0.8}}>
          <div className='list-container'>
          <ul className='lista-negozi'>
           <li><a rel='canonical' target="blank" href={encodeURI('https://www.google.com/maps/dir//Corso+Umberto+I,+233,+Corso+Umberto+I,+161,+84013+Cava+de+Tirreni+SA/@40.6997574,14.638299,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x133bc182a77979ad:0x100519f280c933ef!2m2!1d14.7083389!2d40.6997786?entry=ttu')}>
@@ -35,7 +40,7 @@ function DoveSiamo() {
 
          </ul>
          </div>
-         
+         </motion.div>
 
       <Footer></Footer>
     </div>

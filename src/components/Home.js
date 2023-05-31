@@ -9,6 +9,9 @@ import Herotwo from "./Herotwo";
 import Carousel from "./Carousel";
 import Footer from "./Footer";
 import Button from "./Button";
+import CookieBanner from "./CookieBanner";
+import { posthog } from 'posthog-js';
+
 
 
 
@@ -22,6 +25,8 @@ const homeContainerStyle = {
 };
 
 function Home() {
+
+
   const homeRef = useRef(null);
 
   useEffect(() => {
@@ -35,12 +40,16 @@ function Home() {
         <meta name="description" content="Vieni a scoprire la nostra nuova collezione primavera estate 2023" />
         <meta name="keywords" content="abbigliamento, collezione, primavera, estate, 2023, abbigliamento uomo, maglieria, camiceria, pantaloni, capispalla, Made in Italy, sartoriale, abiti" />
       </Helmet>
+      
       <div style={homeContainerStyle} alt="Background image description">
       
       <a href="#banner">
         <FontAwesomeIcon icon={faAngleDoubleDown} className="double-arrow-icon" />
         </a>
-      
+        {posthog.has_opted_out_capturing() 
+      ||posthog.has_opted_in_capturing() 
+        ? null 
+        :<CookieBanner/>}
       </div>
   <div className="banner" id="banner">
         <p>Outerweare</p>
